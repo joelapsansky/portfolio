@@ -1,4 +1,4 @@
 # Joe Lapsansky
 
-## Link to index.html  
-[Portfolio](/html.index)
+## Links to my sites:  
+https://www.linkedin.com/in/joe-lapsansky-a074356a/
