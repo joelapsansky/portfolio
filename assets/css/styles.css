@@ -324,3 +324,20 @@ a:active {
         margin-top: 80px;
     }
 }
+
+/* === Fix Navbar Click Blocking === */
+#mainNav {
+    position: relative;
+    z-index: 1000; /* ensures nav always stays above everything */
+}
+
+.cover-photo,
+.cover-photo .cover-img,
+.cover-photo .profile-pic {
+    pointer-events: none; /* images don’t block clicks */
+}
+
+.cover-photo .profile-pic {
+    pointer-events: auto; /* allow hovering on profile image if needed */
+    z-index: 10;
+}
