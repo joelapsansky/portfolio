@@ -132,7 +132,7 @@ header.masthead h2 {
 /* Profile image overlaps cover photo and text section */
 .profile-pic {
     position: absolute;
-    top: 240px; /* adjust this so the middle of the image aligns with bottom of cover */
+    top: 260px; /* increased from 240px to lower it slightly */
     left: 40px;
     width: 140px;
     height: 140px;
@@ -159,7 +159,7 @@ header.masthead h2 {
         width: 100px;
         height: 100px;
         left: 20px;
-        top: 140px; /* middle of profile aligns with bottom of cover */
+        top: 160px; /* middle of profile aligns with bottom of cover */
     }
     .masthead .container {
         margin-top: 80px;
