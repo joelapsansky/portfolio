@@ -133,9 +133,9 @@ header.masthead h2 {
 /* Profile image overlaps cover photo and next section */
 .profile-pic {
     position: absolute;
-    top: 50%; /* vertically center relative to cover photo */
-    left: 40px; /* adjust horizontal position */
-    transform: translateY(-50%); /* center vertically on top of cover photo bottom */
+    top: 100%; /* position at the bottom of cover photo */
+    left: 40px;
+    transform: translateY(-50%); /* move up by half of its height */
     width: 140px;
     height: 140px;
     border-radius: 50%;
