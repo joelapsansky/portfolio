@@ -253,7 +253,7 @@ a:active {
 /* ==================== Cover Photo + Profile ==================== */
 .cover-photo {
     width: 100%;
-    height: 350px;
+    height: 340px;
     overflow: visible; /* allow profile to overflow */
     position: relative;
 }
@@ -269,7 +269,7 @@ a:active {
 /* Profile image overlapping bottom of cover and text */
 .profile-pic {
     position: absolute;
-    top: 330px; /* adjust to lower the image */
+    top: 350px; /* adjust to lower the image */
     left: 40px;
     width: 140px;
     height: 140px;
