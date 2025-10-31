@@ -59,9 +59,8 @@ section h2 {
 }
 
 header.masthead {
-    position: relative;
-    padding-top: calc(3rem + 56px);
-    padding-bottom: 8rem; /* enough space for profile image overlap */
+    padding-top: 0; /* remove the extra space above the cover photo */
+    padding-bottom: 8rem; /* keep enough space for the profile image overlap */
 }
 
 header.masthead h1 {
@@ -282,9 +281,7 @@ a:active {
 
 /* Push down container so it doesn't overlap profile */
 .masthead .container {
-    margin-top: 100px;
-    position: relative;
-    z-index: 5;
+    margin-top: 20px; /* or whatever small margin looks good */
 }
 
 /* ==================== Mobile Styles ==================== */
