@@ -269,7 +269,7 @@ a:active {
 /* Profile image overlapping bottom of cover and text */
 .profile-pic {
     position: absolute;
-    top: 280px; /* adjust to lower the image */
+    top: 330px; /* adjust to lower the image */
     left: 40px;
     width: 140px;
     height: 140px;
