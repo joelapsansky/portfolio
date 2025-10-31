@@ -260,71 +260,65 @@ a:active {
 }
 
 /* ============================================= */
-/* === Updated Cover Photo + Profile Icon Styles === */
+/* === Finalized Cover Photo + Profile Icon Styles === */
 /* ============================================= */
 
 .masthead {
     position: relative;
-    background-color: transparent; /* remove blue background */
-    padding-bottom: 2rem;
+    background-color: transparent; /* let bg-primary show through */
+    padding-bottom: 8rem; /* enough space for profile image overlap */
 }
 
 .cover-photo {
     position: relative;
     width: 100%;
-    height: 300px; /* adjust if needed */
+    height: 320px; /* slightly taller for better composition */
     overflow: hidden;
-    background-color: #f0f0f0; /* subtle fallback */
+    background-color: transparent; /* no fallback color */
 }
 
 .cover-photo .cover-img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* keeps aspect ratio without stretching */
-    object-position: center top; /* ensures top of joe.jpg is visible */
+    object-fit: cover;
+    object-position: center top; /* keep top of image visible */
     display: block;
 }
 
 .cover-photo .profile-pic {
     position: absolute;
-    bottom: -60px; /* slight overlap */
+    bottom: -65px; /* overlap into black section */
     left: 40px;
-    width: 130px;
-    height: 130px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
-    border: 4px solid #fff;
+    border: 5px solid #fff;
     object-fit: cover;
     background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
     z-index: 10;
 }
 
-/* Ensure content below doesn't hide the profile image */
+/* Give breathing room below the image */
 .masthead .container {
-    margin-top: 100px; /* extra space for profile pic overlap */
+    margin-top: 100px; /* push text down below image overlap */
     position: relative;
     z-index: 5;
-}
-
-.masthead h1 a {
-    color: white;
-    text-decoration: none;
-}
-
-.masthead h1 a:hover {
-    text-decoration: underline;
 }
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
     .cover-photo {
-        height: 200px;
+        height: 220px;
     }
     .cover-photo .profile-pic {
-        width: 90px;
-        height: 90px;
-        bottom: -45px;
+        width: 100px;
+        height: 100px;
+        bottom: -50px;
         left: 20px;
+    }
+    .masthead {
+        padding-bottom: 6rem;
     }
     .masthead .container {
         margin-top: 80px;
