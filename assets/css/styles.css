@@ -117,8 +117,8 @@ header.masthead h2 {
 .cover-photo {
     position: relative;
     width: 100%;
-    height: 320px; /* slightly taller for better composition */
-    overflow: hidden; /* safe to keep overflow hidden now */
+    height: 320px; /* cover photo height */
+    overflow: visible; /* allow profile-pic to overlap */
     background-color: transparent;
 }
 
@@ -130,11 +130,12 @@ header.masthead h2 {
     display: block;
 }
 
-/* Profile image moved outside cover-photo (Option 1) */
+/* Profile image overlaps cover photo and next section */
 .profile-pic {
     position: absolute;
-    bottom: -65px; /* overlap into black section */
-    left: 40px;
+    top: 50%; /* vertically center relative to cover photo */
+    left: 40px; /* adjust horizontal position */
+    transform: translateY(-50%); /* center vertically on top of cover photo bottom */
     width: 140px;
     height: 140px;
     border-radius: 50%;
@@ -147,7 +148,7 @@ header.masthead h2 {
 
 /* Container inside masthead for text */
 .masthead .container {
-    margin-top: 100px; /* push text down below image overlap */
+    margin-top: 140px; /* leave space for profile image */
     position: relative;
     z-index: 5;
 }
@@ -160,14 +161,12 @@ header.masthead h2 {
     .profile-pic {
         width: 100px;
         height: 100px;
-        bottom: -50px;
         left: 20px;
-    }
-    .masthead {
-        padding-bottom: 6rem;
+        top: 50%;
+        transform: translateY(-50%);
     }
     .masthead .container {
-        margin-top: 80px;
+        margin-top: 120px;
     }
 }
 
