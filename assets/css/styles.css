@@ -259,20 +259,16 @@ a:active {
     color: #fff;
 }
 
-
 .profile-pic {
+    display: block;           /* ✅ KEY FIX */
+    margin-left: auto;
+    margin-right: auto;
+
     width: 200px !important;
     height: 200px !important;
     border-radius: 50% !important;
     border: none !important;
     object-fit: cover;
-    margin-bottom: 10px;   /* slightly reduced */
-}
 
-header.masthead h1 {
-    margin-top: 10px;
-}
-
-header.masthead h1 {
-    margin-top: 12px;
+    margin-bottom: 20px;      /* ✅ stronger spacing */
 }
