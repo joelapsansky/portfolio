@@ -266,6 +266,13 @@ a:active {
     border-radius: 50% !important;
     border: none !important;
     object-fit: cover;
+    margin-bottom: 10px;   /* slightly reduced */
+}
 
-    margin-bottom: 16px;   /* ✅ adds space between pic and name */
+header.masthead h1 {
+    margin-top: 10px;
+}
+
+header.masthead h1 {
+    margin-top: 12px;
 }
