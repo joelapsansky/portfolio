@@ -261,8 +261,10 @@ a:active {
 
 
 .profile-pic {
-    width: 150px !important;
-    height: 150px !important;
+    width: 200px !important;
+    height: 200px !important;
     border-radius: 50% !important;
-    border: 5px solid red !important;
+    border: none !important;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* soft shadow */
 }
