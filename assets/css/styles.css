@@ -259,13 +259,10 @@ a:active {
     color: #fff;
 }
 
+
 .profile-pic {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center top;
-    border: 5px solid white;
-    display: block;
-    margin: 0 auto 40px auto;
+    width: 150px !important;
+    height: 150px !important;
+    border-radius: 50% !important;
+    border: 5px solid red !important;
 }
